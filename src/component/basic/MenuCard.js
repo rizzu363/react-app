@@ -21,7 +21,7 @@ const MenuCard = ({ menuData }) => {
                     </span>
                     <div className="card-read">Read</div>
                   </div>
-                  <img src={image} alt="images" className="card-media" />
+                  <img src={process.env.PUBLIC_URL + image} alt="images" className="card-media" />
 
                   <span className="card-tag  subtle">Order Now</span>
                 </div>
@@ -39,4 +39,4 @@ const MenuCard = ({ menuData }) => {
     )
 }
 
-export default MenuCard
+export default MenuCard;
